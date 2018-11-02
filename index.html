@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>JS Calculator</title>
+</head>
+<body class="bg-light">
+  
+  <div class="container">
+    <h1 class="mt-3">Simple Calculator with JavaScript</h1>
+    <form class="mt-4" name="formKalkulator" id="formKalkulator">
+      <div class="form-group">
+        <label for="">Nilai 1</label>
+        <input type="text" class="form-control" id="nilai1">
+      </div>
+      <div class="form-group">
+        <label for="">Nilai 2</label>
+        <input type="text" class="form-control" id="nilai2">
+      </div>
+      <div class="form-group">
+        <label for="">Operasi</label>
+        <select name="operasi" id="operasi" class="form-control">
+          <option value="+">Tambah</option>
+          <option value="-">Kurang</option>
+          <option value="*">Kali</option>
+          <option value="/">Bagi</option>
+        </select>
+
+        <button class="mt-4 btn btn-primary btn-block" id="hitung" type="submit">Hitung</button>
+        <button class="mt-2 btn btn-block" id="bersih">Bersih</button>
+      </div>
+    </form>
+
+    <div id="hasil" class="mb-4"></div>
+  </div>
+  
+  <script src="main.js"></script>
+  
+</body>
+</html>
